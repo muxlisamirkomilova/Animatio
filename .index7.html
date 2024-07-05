@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nike</title>
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+nav {
+    background: #322E41;
+    padding: 14px 0 14.7px 0;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link {
+    font-size: 16px;
+    color: white;
+    padding: 23px 14px;
+    transition: 0.3s;
+}
+
+.link:hover {
+    background: white;
+    color: #D47300;
+}
+
+.header__content {
+    background: url(./nike2\ 1.png) no-repeat center /cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.header__text {
+    color: white;
+    font-size: 18px;
+}
+
+.main__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main__left {
+    width: 540px;
+    background: white;
+    border-radius: 6px;
+    padding: 15px;
+    margin-top: -30px;
+}
+
+.main__right {
+    width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: -30px;
+}
+
+.main__item {
+    width: 255px;
+    background: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+main {
+    background: #EBEBEB;
+    padding-bottom: 30px;
+}
+
+.main__left h2 {
+    font-size: 22px;
+    color: #2C2A2A;
+    margin: 20px 0 10px 0;
+}
+
+.main__left p {
+    color: #9B9B9B;
+}
+
+.main__item h2 {
+    font-size: 22px;
+    color: #2C2A2A;
+    margin: 12px 0;
+    line-height: 6px;
+}
+.main__item p {
+    color: #9B9B9B;
+}
+
+footer {
+    background: #322E41;
+    padding: 47px 0;
+}
+
+.footer__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    gap: 10px;
+}
+
+.footer__list {
+    display: flex;
+    gap: 68px;
+}
+
+.footer__list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__list ul li a {
+    color: white;
+    transition: 300ms;
+}
+
+.footer__list ul li a:hover {
+    color: #D47300;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 25px;
+}
+
+form input {
+    color: #9B9B9B;
+    line-height: 13px;
+    padding: 10px 0 11px 15px;
+    border: none;
+    border-radius: 6px;
+}
+
+form textarea {
+    resize: none;
+    border-radius: 6px;
+    border: none;
+    height: 86px;
+    padding: 15px 0 0 15px;
+}
+
+form button {
+    color: white;
+    padding: 6px;
+    background: #544294;
+    line-height: 13px;
+    border-radius: 6px;
+    border: none;
+}
+@media(max-width: 1320px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media(max-width: 1140px) {
+    .container {
+        max-width: 992px;
+    }
+    .main__block {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
+        padding-top: 30px;
+    }
+    .main__left, .main__right {
+        margin-top: 0;
+    }
+}
+@media(max-width: 992px) {
+    .container {
+        max-width: 768px;
+    }
+    .footer__block {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+@media(max-width: 768px) {
+    .container {
+        max-width: 576px;
+    }
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .link {
+        padding: 0;
+    }
+}
+@media(max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+    .main__left img {
+        width: 100%;
+    }
+    .main__right {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__left, .main__right, .main__item {
+        max-width: 80%;
+        width: 100%;
+    }
+    .main__item h2 {
+        line-height: 23px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container nav">
+                <a href="#!"><img src="./adidas-logo-png-white 1.png" alt=""></a>
+                <ul>
+                    <li><a href="#!" class="link">Кроссовки</a></li>
+                    <li><a href="#!" class="link">Кеды</a></li>
+                    <li><a href="#!" class="link">Футболки</a></li>
+                    <li><a href="#!" class="link">Шорты</a></li>
+                    <li><a href="#!" class="link">Майки</a></li>
+                    <li><a href="#!" class="link">Олимпийки</a></li>
+                    <li><a href="#!" class="link">Толстовки</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header__content">
+            <h1>NIKE</h1>
+            <p class="header__text">Крутые кроссовки от <strong>NIKE</strong> для вас</p>
+        </div>
+    </header>
+    <main>
+        <div class="main__block container">
+            <div class="main__left">
+                <img src="./airmar90 1.png" alt="">
+                <h2>Shoe Review: Nike Air Max 90</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+                    lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis
+                    leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis
+                    scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis
+                    mauris sit amet massa</p>
+            </div>
+            <div class="main__right">
+                <div class="main__item">
+                    <img src="./nikerosherun 1.png" alt="">
+                    <h2 class="main__title">Nike Rosherun</h2>
+                    <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
+                </div>
+                <div class="main__item">
+                    <img src="./nikerosherun 1.png" alt="">
+                    <h2 class="main__title"> Nike Tanjun</h2>
+                    <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
+                </div>
+                <div class="main__item">
+                    <img src="./nikerosherun 1.png" alt="">
+                    <h2 class="main__title">Зеленый Air Force</h2>
+                    <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
+                </div>
+                <div class="main__item">
+                    <img src="./nikerosherun 1.png" alt="">
+                    <h2 class="main__title">Nike moon shoes</h2>
+                    <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container footer__block">
+            <form>
+                <input type="text" placeholder="Name">
+                <textarea placeholder="Massage"></textarea>
+                <button>Отправить</button>
+            </form>
+            <div class="footer__list">
+                <ul>
+                    <li><a href="#">Кроссовки</a></li>
+                    <li><a href="#">Кеды</a></li>
+                    <li><a href="#">Футболки</a></li>
+                    <li><a href="#">Шорты</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Майки</a></li>
+                    <li><a href="#">Олимпийки</a></li>
+                    <li><a href="#">Толстовки</a></li>
+                </ul>
+            </div>
+            <ul class="footer__socials">
+                <li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+                <li><a href="#"><img src="img/twitter.svg" alt=""></a></li>
+                <li><a href="#"><img src="img/google.svg" alt=""></a></li>
+                <li><a href="#"><img src="img/pinterest.svg" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
